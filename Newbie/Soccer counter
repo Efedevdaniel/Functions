@@ -1,0 +1,3 @@
+function sumPoints(w, d, l) { 
+  return 3 * w + d; 
+}
