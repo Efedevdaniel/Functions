@@ -1,0 +1,3 @@
+function allEqual(list) {
+  return new Set(list).size === 1;
+}
