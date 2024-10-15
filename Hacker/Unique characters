@@ -1,0 +1,12 @@
+function hasUniqueCharacters(input) {
+  const charSet = new Set();
+
+  for (let char of input) {
+    if (charSet.has(char)) {
+      return false;
+    }
+    charSet.add(char);
+  }
+
+  return true;
+}
