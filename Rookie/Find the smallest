@@ -1,0 +1,3 @@
+function findTheSmallest(arr) {
+  return Math.min(...arr);
+}
