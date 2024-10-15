@@ -1,0 +1,6 @@
+function remove(str) {
+  return str.replace(
+    /[aeiou]/gi,
+    '',
+  );
+}
