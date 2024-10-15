@@ -1,0 +1,12 @@
+function findShortest(str) {
+  const words = str.split(' ');
+  let s = words[0];
+
+  for (let word of words) {
+    if (word.length < s.length) {
+      s = word;
+    }
+  }
+
+  return s.length;
+}
