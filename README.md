@@ -1,3 +1,1 @@
-# javaScript
-## functions
-## snippet
+## javaScript snippets
