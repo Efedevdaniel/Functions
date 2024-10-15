@@ -1,0 +1,23 @@
+function mostFrequentWord(str) {
+  const words = str
+    .toLowerCase()
+    .split(' ');
+
+  const wordCount = words.reduce(
+    (count, word) => {
+      count[word] =
+        (count[word] || 0) + 1;
+      return count;
+    },
+    {},
+  );
+
+  const mostFrequent = Object.keys(
+    wordCount,
+  ).reduce((a, b) =>
+    wordCount[a] > wordCount[b]
+      ? a
+      : b,
+  );
+  return mostFrequent;
+}
