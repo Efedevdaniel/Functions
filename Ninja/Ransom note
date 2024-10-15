@@ -1,0 +1,21 @@
+function ransomNote(
+  rNote,
+  magazine,
+) {
+  const magazineChars = {};
+
+  for (const char of magazine) {
+    magazineChars[char] =
+      (magazineChars[char] || 0) +
+      1;
+  }
+
+  for (const char of rNote) {
+    if (!magazineChars[char]) {
+      return false;
+    }
+    magazineChars[char]--;
+  }
+
+  return true;
+}
