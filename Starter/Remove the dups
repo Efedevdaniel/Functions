@@ -1,0 +1,9 @@
+function removeDups(list) {
+  let n = [];
+  for (item of list) {
+    if (!n.includes(item)) {
+      n.push(item);
+    }
+  }
+  return n;
+}
