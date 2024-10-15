@@ -1,0 +1,8 @@
+function swapVowels(word) {
+  const regex = /[aeiou]/g;
+  return word.replace(
+    regex,
+    (match) =>
+      'aeiou'.indexOf(match) + 1,
+  );
+}
