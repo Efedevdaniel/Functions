@@ -1,0 +1,25 @@
+function sumOfIntervals(itv) {
+  itv.sort((a, b) => a[0] - b[0]);
+  let total = 0,
+    curr = itv[0];
+
+  for (
+    let i = 1;
+    i < itv.length;
+    i++
+  ) {
+    const next = itv[i];
+
+    if (next[0] <= curr[1]) {
+      curr[1] = Math.max(
+        curr[1],
+        next[1],
+      );
+    } else {
+      total += curr[1] - curr[0];
+      curr = next;
+    }
+  }
+
+  return total + curr[1] - curr[0];
+}
