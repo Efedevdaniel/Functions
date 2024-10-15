@@ -1,0 +1,19 @@
+function squareItAll(n) {
+  let result = '';
+  const dgts = n.toString();
+
+  for (
+    let i = 0;
+    i < dgts.length;
+    i++
+  ) {
+    const digit = parseInt(
+      dgts[i],
+      10,
+    );
+    const squared = digit * digit;
+    result += squared.toString();
+  }
+
+  return result;
+}
