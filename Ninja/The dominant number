@@ -1,0 +1,26 @@
+function dominantNumber(arr) {
+  let count = 0;
+  let candidate = -1;
+
+  for (const num of arr) {
+    if (count === 0) {
+      candidate = num;
+      count = 1;
+    } else if (num === candidate) {
+      count++;
+    } else {
+      count--;
+    }
+
+    count = 0;
+    for (const num of arr) {
+      if (num === candidate) {
+        count++;
+      }
+    }
+  }
+
+  return count > arr.length / 2
+    ? candidate
+    : -1;
+}
