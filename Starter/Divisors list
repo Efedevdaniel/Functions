@@ -1,0 +1,9 @@
+function divisors(n) {
+  const divisorsList = [];
+  for(let i = 1; i <= n; i++){
+    if (n % i === 0) {
+      divisorsList.push(i);
+    }
+  }
+  return divisorsList;
+}
