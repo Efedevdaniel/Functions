@@ -1,0 +1,13 @@
+function stringIncrementer(str) {
+  let num = parseInt(str);
+  if (isNaN(num)) {
+    return '1';
+  }
+
+  num++;
+
+  const result = num
+    .toString()
+    .padStart(str.length, '0');
+  return result;
+}
