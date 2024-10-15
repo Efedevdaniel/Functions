@@ -1,0 +1,3 @@
+function translateDNA(dna) {
+  return dna.replace(/T/g, "U");
+}
