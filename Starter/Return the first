@@ -1,0 +1,3 @@
+function firstChar(list) {
+  return list.map(str => str[0]);
+}
