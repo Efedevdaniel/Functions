@@ -1,0 +1,15 @@
+function twoSum(n, t) {
+  const index = {};
+  for (
+    let i = 0; 
+    i < n.length; 
+    i++
+  ) {
+    const comp = t - n[i];
+    if (index[comp] !== undefined) {
+      return [index[comp], i];
+    }
+    index[n[i]] = i;
+  }
+  return [];
+}
