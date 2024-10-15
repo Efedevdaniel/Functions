@@ -1,0 +1,19 @@
+function countVowels(str) {
+  let count = 0;
+  const vowelList = [
+    'a',
+    'e',
+    'i',
+    'o',
+    'u',
+  ];
+
+  for (let char of str) {
+    const lc = char.toLowerCase();
+    if (vowelList.includes(lc)) {
+      count++;
+    }
+  }
+
+  return count;
+}
