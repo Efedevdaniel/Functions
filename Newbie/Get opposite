@@ -1,0 +1,3 @@
+function findOpposite(num) {
+  return num * -1;
+}
