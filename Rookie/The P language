@@ -1,0 +1,8 @@
+function translate(str) {
+  let words = str.split(" ");
+  let result = "";
+  for (let word of words) {
+    result += "P" + word + " ";
+  }
+  return result.trim();
+}
