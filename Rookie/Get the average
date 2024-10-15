@@ -1,0 +1,7 @@
+function getAverage(arr) {
+  let sum = 0;
+  for (item of arr) {
+    sum += item;
+  }
+  return sum / arr.length;
+} 
