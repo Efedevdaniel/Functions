@@ -1,0 +1,13 @@
+function hideEmail(email) {
+  let newStr = email[0];
+  let length = email.length - 1;
+  for(let i = 1; i < length; i++){
+    if (email[i] === '@') {
+      newStr += '@';
+    } else {
+      newStr += '*';
+    }
+  }
+  newStr += email[length];
+  return newStr;
+}
